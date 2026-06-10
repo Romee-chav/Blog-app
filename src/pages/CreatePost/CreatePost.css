@@ -1,0 +1,57 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--second-color);
+    box-shadow: 0 0 4px hsl(24, 100%, 50%, 0.3);
+}
+
+/* =========================
+   RESPONSIVE FORM SECTION
+========================= */
+
+@media (max-width: 768px) {
+
+    .section {
+        min-height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section {
+        padding: 10px;
+    }
+
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+}

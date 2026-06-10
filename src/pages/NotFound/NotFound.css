@@ -1,0 +1,98 @@
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.error-page .container {
+    max-width: 600px;
+}
+
+.error-page h1 {
+    font-size: 100px;
+    color: #fa2d2d;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.error-page h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.error-page p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.error-page .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #fd8f44;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.error-page .btn:hover {
+    background: #e9782c;
+    transform: scale(1.05);
+}
+
+/* =========================
+   ERROR PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .error-page {
+        padding: 15px;
+    }
+
+    .error-page h1 {
+        font-size: 60px;
+    }
+
+    .error-page h2 {
+        font-size: 22px;
+    }
+
+    .error-page p {
+        font-size: 15px;
+    }
+
+    .error-page .btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .error-page h1 {
+        font-size: 45px;
+    }
+
+    .error-page h2 {
+        font-size: 18px;
+    }
+
+    .error-page p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .error-page .btn {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,58 @@
+.post-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 10px 15px;
+}
+
+/* Filter item */
+.filter-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 6px 10px;
+    white-space: nowrap;
+}
+
+/* Active + hover */
+.active-filter,
+.filter-item:hover {
+    color: var(--second-color);
+    border-bottom: 2px solid var(--second-color);
+    transform: scale(1.05);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .post-filter {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 10px;
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .post-filter::-webkit-scrollbar {
+        display: none;
+        /* Chrome */
+    }
+
+    .filter-item {
+        flex: 0 0 auto;
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .filter-item {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+}

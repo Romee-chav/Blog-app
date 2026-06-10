@@ -1,0 +1,161 @@
+a {
+    text-decoration: none;
+}
+
+/* ===================== */
+/* POST GRID (DESKTOP) */
+/* ===================== */
+.post {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Post Card */
+.post-box {
+    background: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem;
+}
+
+/* Image */
+.post-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Category */
+.category {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+/* Title */
+.post-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Date */
+.post-date {
+    display: flex;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 4px;
+    color: var(--second-color);
+}
+
+/* Description */
+.post-description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    color: var(--text-color);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--second-color);
+}
+
+.profile-name {
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+/* Button */
+.read-more {
+    display: inline-block;
+    margin: 10px 0 5px;
+    padding: 8px 10px;
+    background: var(--second-color);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background: hsl(24, 98%, 48%);
+    transform: scale(1.05);
+}
+
+/* ===================== */
+/* TABLET (<= 992px) */
+/* ===================== */
+@media (max-width: 992px) {
+    .post {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+        gap: 1rem;
+    }
+}
+
+/* ===================== */
+/* MOBILE (<= 768px) */
+/* ===================== */
+@media (max-width: 768px) {
+    .post {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .post-title {
+        font-size: 1.1rem;
+    }
+
+    .post-date {
+        font-size: 1rem;
+    }
+}
+
+/* ===================== */
+/* SMALL MOBILE (<= 480px) */
+/* ===================== */
+@media (max-width: 480px) {
+    .post-box {
+        padding: 12px;
+    }
+
+    .post-img {
+        height: 160px;
+    }
+
+    .post-description {
+        font-size: 0.85rem;
+    }
+
+    .read-more {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+}
