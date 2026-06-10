@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./EditPost.css";
+import "./editPost.css";
 
 function EditPost() {
   const [post, setPost] = useState({
